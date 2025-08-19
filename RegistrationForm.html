@@ -15,7 +15,7 @@
     }
 
     .form-container {
-      background: rgba(0, 0, 0, 0.6);
+      background: rgba(94, 74, 74, 0.6);
       padding: 30px;
       border-radius: 8px;
       width: 350px;
@@ -26,7 +26,7 @@
       display: inline-block;
       width: 120px;
       margin-bottom: 10px;
-      vertical-align: top; /* ✅ Aligns "About" properly */
+      vertical-align: top;
     }
 
     .form-container input[type="text"],
@@ -40,11 +40,11 @@
     }
 
     .form-container textarea {
-      height: 60px; /* ✅ Keeps About box not too big */
+      height: 60px;
     }
 
     .form-container input[type="radio"] {
-      margin: 0 5px;
+      margin: 0 5px 0 0;
     }
 
     .form-container button {
@@ -79,15 +79,17 @@
       <input type="text"><br>
 
       <label>Gender:</label>
-      Male:<input type="radio" name="gender">
-      Female:<input type="radio" name="gender">
-      Other:<input type="radio" name="gender"><br>
+      <input type="radio" name="gender"> Male
+      <input type="radio" name="gender"> Female
+      <input type="radio" name="gender"> Other<br>
 
       <label>Language:</label>
       <select>
         <option>Select language</option>
         <option>English</option>
         <option>Hindi</option>
+        <option>Marathi</option>
+        <option>German</option>
         <option>French</option>
       </select><br>
 
